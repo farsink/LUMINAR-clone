@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar-brand img {
+    height: 60px; /* Adjust the logo size */
+}
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%; /* Start from the center */
+    background-color: purple;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%); /* Center the underline */
+}
+.navbar-nav .nav-link:hover::before,
+.navbar-nav .nav-link.active::before {
+    color: purple;
+    width: 90%; /* Expand the underline */
+    left: 0; /* Align the underline with the left side of the text */
+    transform: translateX(0); /* Reset translation */
+}
+.navbar-toggler {
+    padding: 2px 10px; /* Adjust padding for smaller size */
+    font-size: 0.6rem; /* Make the icon smaller */
+}
+
+.navbar-toggler-icon {
+    width: 10px; /* Adjust the width of the icon */
+    height: 10px; /* Adjust the height of the icon */
+}
+
+.hero-section {
+    background-color: #e4caff; /* Light purple background */
+    padding: 50px 0;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #6b2ea0;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: #6b2ea0;
+    font-weight: bold;
+}
+
+.hero-text {
+    font-size: 1rem;
+    color: #000;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+}
+.whatsapp-button{
+    border-radius: 50% !important;
+
+}
+.message-button{
+    background-color: #6b2ea0 !important;
+
+}
+.why-luminar{
+    padding-top: 50px !important;
+}
+.scrollable-text {
+    height: 500px; /* Set a height for the scrollable area */
+    width: auto;
+    overflow-y: scroll;
+    padding: 20px;
+    border: 0px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+.img-section img {
+    max-width: 100%;
+    height: auto;
+}
+.scrollable-text {
+    scrollbar-width: thin;
+    scrollbar-color: #6b2ea0 #f9f9f9; /* Track color #f9f9f9, Scrollbar color #6c757d */
+}
+.counter {
+    color: rgba(255, 255, 255, 0.982);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.counter-container {
+    background-image:linear-gradient(rgba(70, 19, 91, .8313725490196079), rgba(70, 19, 91, .8313725490196079)),url("https://www.luminartechnolab.com/static/media/pexels-fauxels-3182768.84dc6f9f.png");
+    background-color: #6f42c1; /* Purple background */
+    padding: 50px 0;
+    text-align: center;
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    overflow:hidden
+}
+
+.counter-title {
+    font-size: 1.2rem;
+}
+/* our team */
+.team-card{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    z-index: 100;
+}
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.team-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+.team-card:hover img {
+    transform: scale(.9);
+}
+.team-card .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-card .card-title {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+}
+.team-card .card-text{
+    color: #696666 !important;
+
+}
+.team-card .purple-layout {
+    width: 140px;
+    height: 140px;
+    background-color: #6f42c1; /* Purple background */
+    border-radius: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin: 0 auto; 
+   
+    
+}
+.social-icons {
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 0.3s  
+}
+.social-icons a {
+    margin: 0 10px;
+    color: #6f42c1; /* Purple for social icons */
+    font-size: 20px;
+   
+    transition: color 0.3s;
+    
+}
+.social-icons a:hover {
+    color: #0e0023; /* Slightly darker purple on hover */
+}
+.purple-overlay {
+    background-color: #6f42c1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: -1;
+}
+
+.team-card:hover .purple-overlay {
+    opacity: 1;
+    z-index: 1;
+}
+
+.team-card:hover .social-icons {
+    opacity: 1;
+    
+}
+/* join Us*/
+
+.join-us {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-image: url("https://www.luminartechnolab.com/static/media/pexels-kindel-media-7054785.47b27e7d.png");
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.join-us .join-button button{
+    width: 200px;
+    background-color: #f9f9f9;
+    color:#6b2ea0;
+    font-size: large;
+    font-weight: bolder;
+    padding: 10px 20px;
+    border-radius: 40px;
+    transition: background-color 0.3s;
+}
+
+/* footer */
+
+footer h3 {
+    font-size: 1rem;
+    margin-top: 1pc;
+}
+hr{
+    width: 100%;
+    color: #6b2ea0;
+    border-top: var(--bs-border-width) solid #6b2ea0 !important;
+    opacity: 100% !important;
+}
+
+
+footer a:hover{
+    color: #6b2ea0;
+}
+footer a
+    {color: #7e7e7e;
+    display: block;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    padding-bottom: 0rem;
+    border-bottom: .1rem solid #fff;
+    width: 80%;
+    transition: 1s;
+    transition-behavior: normal;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+}
+
+footer a:hover{
+    border-bottom: 1px solid #6b2ea0;
+    padding-bottom: 1rem;
+}
+
+footer h4 {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #6b2ea0;
+    margin-top: 10px;
+}
+
+footer p{
+     
+        margin-top: 0;
+        margin-bottom: 0;
+
+}
+
+.footer-wrapper a{
+    color: #6b2ea0 !important;
+    font-weight: 600;
+}
+
+/* @media(max-width: 500px){
+    .whatsapp-button{
+       position: fixed;
+       bottom: 50px;
+    }
+
+} */
